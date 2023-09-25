@@ -55,7 +55,7 @@
   - CTGAN
     - CTGAN은 Conditional Tabular GAN의 약어로, Conditional GAN을 기반으로 한 GAN 아키텍처이다.
     - CTGAN은 표 형식의 데이터를 생성하기 위한 생성적 적대 신경망(Generative Adversarial Network, GAN) 기반의 모델이다.
-    - 우리 서비스는, 이산적 데이터와 연속적 데이터 모두 포함된 데이터를 다루므로, mode specific normalization과 Training by Sampling 작업을 수행할 수 있는 CTGAN을 채택했다.
+    - 우리 서비스는 이산적 데이터와 연속적 데이터 모두 포함된 데이터를 다루므로, mode specific normalization과 Training by Sampling 작업을 수행할 수 있는 CTGAN을 채택했다.
 
 **6. 데이터 전처리**
 - 실시간 인구 밀도 분석 / 시간별 인구 밀도 예측 
@@ -69,7 +69,7 @@
 - LSTM
   - LSTM은 "Long Short-Term Memory"의 약자로, 순환 신경망(Recurrent Neural Network, RNN)의 한 종류이다. LSTM은 주로 시퀀스 데이터를 처리하고 시간에 따른 의존성을 모델링하는 데 사용된다.
   - LSTM 모델은 이전 단계의 정보를 기억하고 활용할 수 있는 구조를 가진다. 시간의 순서를 고려하여 데이터를 처리한다는 장점이 있어, LSTM은 시계열 데이터에서 과거의 정보를 토대로 미래를 예측할 수 있다.
-  - 우리 서비스는, 요일, 시간대별로 해당 골목을 얼마나 이동하는지에 대한 시계열 데이터를 수집했기 때문에 데이터가 가지고 있는 시간적 특성을, 예측에도 고려해주기 위해 시계열 데이터 학습에 특화된 LSTM을 선정했다.
+  - 우리 서비스는 요일, 시간대별로 해당 골목을 얼마나 이동하는지에 대한 시계열 데이터를 수집했기 때문에 데이터가 가지고 있는 시간적 특성을, 예측에도 고려해주기 위해 시계열 데이터 학습에 특화된 LSTM을 선정했다.
 
 ### 어플리케이션 
 - 앱의 메인 화면은 cctv가 없는 거리의 시간별 예상 혼잡도이다.
